@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    
+        <script>
+function prog()
+{
+    var a=f1.t2.value;
+    var b="hurray";
+    var c="oops";
+
+    if(a>=18)
+    { 
+        f1.t3.value=b;
+    }
+    else
+    
+{
+    f1.t3.value=c;
+}
+}
+        </script>
+                <style>
+                    div{
+                        border:5px solid blue;
+                        margin:auto;
+                    }
+                    
+            </style>               
+    </head>
+    <body>
+    <center>
+        <h1> can you vote ?/</h1>
+        <div>
+        <form name="f1">
+            <label>name</label>
+            <input type="text" name="t1">
+            <br><br>
+            <label>age</label>
+            <input type="text"  name="t2">
+            <br><br>
+            <input type="button" name="b1" value="check" onclick="prog()">
+            <input type="text" name="t3">
+
+        </form>
+        </div>
+    </center>
+    
+    </body>
+</html>

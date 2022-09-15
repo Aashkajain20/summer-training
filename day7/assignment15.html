@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script>
+            function prog1()
+            {
+
+                var a=parseInt(f1.b1.value);
+                var b=parseInt(f1.b2.value);
+                f1.b3.value=a*b;
+            }
+            
+            function prog2()
+            {
+
+                var a=parseInt(f1.b1.value);
+                var b=parseInt(f1.b2.value);
+                f1.b3.value=a/b;
+            }
+            function prog3()
+            {
+
+                var a=parseInt(f1.b1.value);
+                var b=parseInt(f1.b2.value);
+                f1.b3.value=a+b;
+            }
+            function prog4()
+            {
+
+                var a=parseInt(f1.b1.value);
+                var b=parseInt(f1.b2.value);
+                f1.b3.value=a-b;
+            }
+        </script>
+        <style>
+            div{
+                border: 3px solid blue;
+            padding:10%;
+                margin:0% 30%;
+                
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <h1>calculator</h1>
+        <div>
+        <form name="f1">
+            
+                
+            number1<input type="text" name="b1" maxlength="10">
+        <br><br><br>
+            number2<input type="text" name="b2" maxlength="10">
+            <br><br><br>
+result<input type="text" name="b3">
+<br><br><br>
+<input type="button" name="s1" value="*" onclick="prog1()">
+<input type="button" name="s2" value="/" onclick="prog2()">
+<input type="button" name="s3" value="+" onclick="prog3()">
+<input type="button" name="s4" value="-" onclick="prog4()">
+<br><br><br>
+
+      </form>
+        </div>
+    </center>
+
+    </body>
+</html>

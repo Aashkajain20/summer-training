@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+
+        <button id="b1" onclick="buttonclicl()">click me</button>
+        <buttton id="b2">click</buttton>
+        <script>
+            function buttonclick()
+            {
+                alert("button was click");
+            }
+            var b2=document.getelementbyid("b2");
+            b2.addeventlistener("click",buttonclick);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            div{
+                border:4px  solid blue;
+                margin:2px;
+                padding:2px ;
+                width: 500px;
+                height:500px;
+            }
+        </style>
+        <script language="javascipt">
+            function progcal()
+            {
+                var a=f1.t2.value;
+                var b;
+                if(a>=500000 && f1.b1[0].checked)
+                {
+
+                    b=a*0.1;
+                    f1.t3.value=b;
+                }
+                if(a>=500000 && f1.b1[1].checked)
+                {
+
+                    b=a*0.05;
+                    f1.t3.value=b;
+                }
+                if(a<500000 && f1.b1[0].checked)
+                {
+
+                    b=a*0.3;
+                    f1.t3.value=b;
+                }
+                if(a<500000 && f1.b1[1].checked)
+                {
+
+                    b=a*0.2;
+                    f1.t3.value=b;
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+    <center>
+        <h1>TAX CALCULATOR</h1>
+        <div>
+        <form name="f1">
+            <label>name</label>
+            <input type="text" name="t1" maxlength="10">
+            <br><br><br>
+            <label>taxable income</label>
+            <input type="tel" name="t2" maxlength="10">
+            <br><br><br>
+            <label>gender</label>
+            <input type="radio" name="b1" >male
+            <input type="radio" name="b1" >female
+            <br><br><br>
+            <label>taxable tax</label>
+            <input type="tel" name="t3" maxlength="10">
+            <br><br><br>
+            <input type="button" name="g1" value="display tax" onclick="progcal()">
+        </form>
+        </div>
+    </center>
+
+    </body>
+</html>
